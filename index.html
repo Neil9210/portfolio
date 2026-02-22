@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nitin Mathur | Frontend Developer</title>
 
+<!-- ICON LIBRARY -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 body {
   margin: 0;
@@ -15,38 +18,49 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 950px;
   margin: auto;
   padding: 60px 20px;
 }
 
-/* HERO TITLE */
 h1 {
   font-size: 44px;
   margin-bottom: 5px;
 }
 
 h1 span {
-  color: #ffffff;   /* name white */
+  color: #ffffff;
   white-space: nowrap;
 }
 
-/* MOBILE RESPONSIVE */
 @media (max-width: 500px) {
-  h1 {
-    font-size: 32px;
-  }
+  h1 { font-size: 32px; }
 }
 
-/* ROLE TITLE */
 h2 {
-  color: #38bdf8;   /* stays blue */
-  margin-bottom: 25px;
+  color: #38bdf8;
+  margin-bottom: 20px;
   font-weight: 500;
 }
 
 p {
   line-height: 1.6;
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  margin: 10px 8px;
+  padding: 12px 22px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
 }
 
 /* CARDS */
@@ -63,26 +77,18 @@ p {
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-a {
-  color: #38bdf8;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* BUTTON */
-.button {
-  display: inline-block;
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
   margin-top: 15px;
-  padding: 12px 22px;
-  background: #38bdf8;
-  color: black;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: 0.2s;
 }
 
-.button:hover {
-  transform: scale(1.05);
+.skill {
+  font-size: 28px;
+  opacity: 0.9;
 }
 
 .footer {
@@ -102,6 +108,20 @@ a {
 
   <p>I build clean, modern and user-friendly web interfaces.</p>
 
+  <!-- ACTION BUTTONS -->
+  <a href="resume.pdf" class="button" download>
+    <i class="fa-solid fa-download"></i> Download Resume
+  </a>
+
+  <a href="https://www.linkedin.com/in/nitin-mathur-5597761a5" class="button" target="_blank">
+    <i class="fa-brands fa-linkedin"></i> LinkedIn
+  </a>
+
+  <a href="https://github.com/Neil9210" class="button" target="_blank">
+    <i class="fa-brands fa-github"></i> GitHub
+  </a>
+
+  <!-- PROJECT -->
   <div class="card">
     <h3>🚀 Fresh Start Interface</h3>
     <p>Responsive and modern frontend interface built using React & Vite.</p>
@@ -111,11 +131,20 @@ a {
     <a href="https://github.com/Neil9210/fresh-start-interface">View Code</a>
   </div>
 
+  <!-- SKILLS -->
   <div class="card">
-    <h3>💻 GitHub Profile</h3>
-    <p>Explore my projects and code repositories.</p>
+    <h3>🧠 Skills</h3>
 
-    <a href="https://github.com/Neil9210" class="button">Visit GitHub</a>
+    <div class="skills">
+      <div class="skill"><i class="fa-brands fa-html5"></i></div>
+      <div class="skill"><i class="fa-brands fa-css3-alt"></i></div>
+      <div class="skill"><i class="fa-brands fa-js"></i></div>
+      <div class="skill"><i class="fa-brands fa-react"></i></div>
+      <div class="skill"><i class="fa-brands fa-node-js"></i></div>
+      <div class="skill"><i class="fa-brands fa-git-alt"></i></div>
+      <div class="skill"><i class="fa-brands fa-github"></i></div>
+    </div>
+
   </div>
 
   <div class="footer">
