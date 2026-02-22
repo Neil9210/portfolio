@@ -20,13 +20,22 @@ body {
   padding: 60px 20px;
 }
 
+/* HERO TITLE */
 h1 {
-  font-size: 46px;
+  font-size: 44px;
   margin-bottom: 5px;
 }
 
 h1 span {
   color: #38bdf8;
+  white-space: nowrap; /* keeps name in one line */
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 32px;
+  }
 }
 
 h2 {
@@ -35,11 +44,16 @@ h2 {
   font-weight: 500;
 }
 
+p {
+  line-height: 1.6;
+}
+
+/* CARDS */
 .card {
   background: rgba(255,255,255,0.05);
-  padding: 20px;
+  padding: 25px;
   border-radius: 16px;
-  margin: 20px 0;
+  margin: 25px 0;
   transition: 0.3s;
 }
 
@@ -54,13 +68,20 @@ a {
   font-weight: bold;
 }
 
+/* BUTTON */
 .button {
   display: inline-block;
   margin-top: 15px;
-  padding: 10px 18px;
+  padding: 12px 22px;
   background: #38bdf8;
   color: black;
   border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
 }
 
 .footer {
